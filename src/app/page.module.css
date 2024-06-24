@@ -5,6 +5,7 @@
   width: 100dvw;
   height: 100dvh;
 }
+
 .left {
   flex: 1;
   display: flex;

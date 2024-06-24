@@ -1,0 +1,11 @@
+.navPill {
+  width: 150px;
+  display: flex;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.navPill:hover {
+  background-color: rgba(15, 20, 25, 0.1);
+}

@@ -47,6 +47,7 @@
 }
 @media all and (min-width: 687px) {
   .modal {
+    background-color: #fff;
     top: 5%;
     min-width: 600px;
     max-width: 600px;

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-// import './globals.css';
+import './globals.css';
 import styles from './page.module.css';
 import { cn } from '@/lib/utils';
 
-const inter = Inter({ 
-    subsets: ['latin'],  
-    variable: "--font-sans",
- });
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,10 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${cn(
-          "min-h-screen bg-background font-sans antialiased",
-          inter.variable
-        )}`}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+      </head>
+      <body>
         <div className={styles.container}>{children}</div>
       </body>
     </html>
